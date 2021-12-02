@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+
+import godirect_api.nodes.godirect_publisher
+
+godirect_api.nodes.godirect_publisher.publish_grip_force()

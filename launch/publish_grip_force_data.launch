@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- start node and load parameters -->
+  <group ns="gdx">
+    <!-- Run the godirect_publisher node and set config as private parameters -->
+    <node pkg="godirect_ros" type="godirect_publisher" name="godirect_publisher"
+      output="screen">
+      <rosparam command="load"
+        file="$(find godirect_ros)/config/godirect_hand_dynamometer_config.yaml"/>
+    </node>
+  </group>
+</launch>
